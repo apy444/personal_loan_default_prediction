@@ -18,7 +18,7 @@ def data_converting(dataset):
             '1 year': 1, '6 years': 6, '5 years': 5, '8 years': 8, '7 years': 7, '3 years':3}
     for emp_key, emp_val in emp_lens.items():
         dataset.loc[dataset.emp_length == emp_key, 'emp_length'] = emp_val
-        
+    dataset.emp_length = dataset.emp_length.astype(float)
     
     #Converting grades to integers
     grades = {'A':7, 'B':6, 'C':5, 'D':4, 'E':3, 'F':2, 'G':1}
@@ -29,7 +29,7 @@ def data_converting(dataset):
     dataset.loc[:,'earliest_cr_line'] = dataset.earliest_cr_line.apply(lambda x: 2015 - int(x[-4:]))
     
     #revol_util convert to numeric, replace nan with median
-    dataset.loc['revol_util'] = dataset.revol_util.str.strip('%').astype(float)
+    dataset.loc[:,'revol_util'] = dataset.revol_util.str.strip('%').astype(float)
     
     #create less category for purpose
     purposes = {'educational': 'other', 'vacation':'major_purchase', 'wedding':'major_purchase', 'renewable_energy':'home_improvement'}
