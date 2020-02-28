@@ -17,7 +17,7 @@ Research questions:
 2) Explore ways to increase our F1 score to have a less imbalance in the precision and recall in the confusion matrix.
 
 Exploration:
-1. Performed Logist Regression 
+1. Performed Logistic Regression with different strategies to handle imbalance dataset
 
 ## Repository Files:
 
