@@ -25,15 +25,13 @@ Exploration:
 
 - **README.md:** repository overview document.
 
-- **data_cleaning.ipynb:** technical Jupyter Notebook that cleans data from Lending club dataset.
+- **EDA.ipynb:** technical Jupyter Notebook that contains data cleaning and EDA
 
-- **technical_notebook.ipynb:** technical Jupyter Notebook performing exploration analysis for personal loans. 
+- **technical_notebook.ipynb:** technical Jupyter Notebook for modeling of personal loans. 
 
 - **LendingClub:** folder containing data
 
-  - **LCDataDictionary.xlsx:** resulting xlsx from dataset from Kaggle
-
-  - **LoanStats3d_securev1.csv.zip:** resulting zip folder containing different datasets
+  - **LCDataDictionary.xlsx:** resulting xlsx containing detailed description of columns
   
   - **LoanStats3c_securev1.csv.zip:** resulting zip folder containing different datasets
 
@@ -42,6 +40,10 @@ Exploration:
   - **data_cleaning.py:**
 
   - **technical_notebook.py:**
+  
+- **img:** folder for related images
+
+- **preprocessing:** folder for files used during the preprocessing
 
 
 ## Responsibilities:
